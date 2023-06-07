@@ -379,58 +379,58 @@ int main()
 
 	//Carga de modelos y rutas de los mismos
 	Model Zoo((char*)"Models/Zoologico.obj");
-	//Model Domo((char*)"Models/Domo.obj");
-	//Model Agua((char*)"Models/Agua.obj");
-	//Model PuertaDer((char*)"Models/PuertaDer.obj");
-	//Model PuertaIzq((char*)"Models/PuertaIzq.obj");
+	Model Domo((char*)"Models/Domo.obj");
+	Model Agua((char*)"Models/Agua.obj");
+	Model PuertaDer((char*)"Models/PuertaDer.obj");
+	Model PuertaIzq((char*)"Models/PuertaIzq.obj");
 
-	////Elefantes
-	//Model Trompa((char*)"Models/Elefante/Trompa.obj");
-	//Model Ele((char*)"Models/Elefante/Elefante.obj");
-	//Model DerFront((char*)"Models/Elefante/DerFront.obj");
-	//Model DerTras((char*)"Models/Elefante/DerTras.obj");
-	//Model IzqTras((char*)"Models/Elefante/IzqTras.obj");
-	//Model IzqFront((char*)"Models/Elefante/IzqFront.obj");
-	//
+	//Elefantes
+	Model Trompa((char*)"Models/Elefante/Trompa.obj");
+	Model Ele((char*)"Models/Elefante/Elefante.obj");
+	Model DerFront((char*)"Models/Elefante/DerFront.obj");
+	Model DerTras((char*)"Models/Elefante/DerTras.obj");
+	Model IzqTras((char*)"Models/Elefante/IzqTras.obj");
+	Model IzqFront((char*)"Models/Elefante/IzqFront.obj");
+	
 
-	//Model TrompaDos((char*)"Models/Elefante/TrompaDos.obj");
-	//Model EleDos((char*)"Models/Elefante/ElefanteDos.obj");
-	//Model DerFrontDos((char*)"Models/Elefante/DerFrontDos.obj");
-	//Model DerTrasDos((char*)"Models/Elefante/DerTrasDos.obj");
-	//Model IzqTrasDos((char*)"Models/Elefante/IzqTrasDos.obj");
-	//Model IzqFronDos((char*)"Models/Elefante/IzqFrontDos.obj");
-
-
-	////Jirafas
-	//Model Jirafa((char*)"Models/Jirafa/Cabeza.obj");
-	//Model Torso((char*)"Models/Jirafa/Torso.obj");
-	//Model DerFrontJ((char*)"Models/Jirafa/DerFront.obj");
-	//Model IzqFrontJ((char*)"Models/Jirafa/IzqFront.obj");
-	//Model DerTrasJ((char*)"Models/Jirafa/DerTras.obj");
-	//Model IzqTrasJ((char*)"Models/Jirafa/IzqTras.obj");
+	Model TrompaDos((char*)"Models/Elefante/TrompaDos.obj");
+	Model EleDos((char*)"Models/Elefante/ElefanteDos.obj");
+	Model DerFrontDos((char*)"Models/Elefante/DerFrontDos.obj");
+	Model DerTrasDos((char*)"Models/Elefante/DerTrasDos.obj");
+	Model IzqTrasDos((char*)"Models/Elefante/IzqTrasDos.obj");
+	Model IzqFronDos((char*)"Models/Elefante/IzqFrontDos.obj");
 
 
-	//Model JirafaDos((char*)"Models/Jirafa/CabezaDos.obj");
-	//Model TorsoDos((char*)"Models/Jirafa/TorsoDos.obj");
-	//Model DerFrontDosJ((char*)"Models/Jirafa/DerFrontDos.obj");
-	//Model IzqFrontDosJ((char*)"Models/Jirafa/IzqFrontDos.obj");
-	//Model DerTrasDosJ((char*)"Models/Jirafa/DerTrasDos.obj");
-	//Model IzqTrasDosJ((char*)"Models/Jirafa/IzqTrasDos.obj");
+	//Jirafas
+	Model Jirafa((char*)"Models/Jirafa/Cabeza.obj");
+	Model Torso((char*)"Models/Jirafa/Torso.obj");
+	Model DerFrontJ((char*)"Models/Jirafa/DerFront.obj");
+	Model IzqFrontJ((char*)"Models/Jirafa/IzqFront.obj");
+	Model DerTrasJ((char*)"Models/Jirafa/DerTras.obj");
+	Model IzqTrasJ((char*)"Models/Jirafa/IzqTras.obj");
 
-	////Coche
-	//Model Coche((char*)"Models/Coche.obj");
 
-	////Tigres
-	//Model Tigre((char*)"Models/Tigre/Tigre.obj");
-	//Model Hosico((char*)"Models/Tigre/Mandibula.obj");
-	//Model IzqTrasT((char*)"Models/Tigre/IzqTras.obj");
-	//Model IzqFrontT((char*)"Models/Tigre/IzqFront.obj");
-	//Model DerTrasT((char*)"Models/Tigre/DerTras.obj");
-	//Model DerFrontT((char*)"Models/Tigre/DerFront.obj");
+	Model JirafaDos((char*)"Models/Jirafa/CabezaDos.obj");
+	Model TorsoDos((char*)"Models/Jirafa/TorsoDos.obj");
+	Model DerFrontDosJ((char*)"Models/Jirafa/DerFrontDos.obj");
+	Model IzqFrontDosJ((char*)"Models/Jirafa/IzqFrontDos.obj");
+	Model DerTrasDosJ((char*)"Models/Jirafa/DerTrasDos.obj");
+	Model IzqTrasDosJ((char*)"Models/Jirafa/IzqTrasDos.obj");
 
-	//Model TigreDos((char*)"Models/Tigre/TigreDos.obj");
-	//Model HosicoDos((char*)"Models/Tigre/MandiDos.obj");
-	//Model Cola((char*)"Models/Tigre/Cola.obj");
+	//Coche
+	Model Coche((char*)"Models/Coche.obj");
+
+	//Tigres
+	Model Tigre((char*)"Models/Tigre/Tigre.obj");
+	Model Hosico((char*)"Models/Tigre/Mandibula.obj");
+	Model IzqTrasT((char*)"Models/Tigre/IzqTras.obj");
+	Model IzqFrontT((char*)"Models/Tigre/IzqFront.obj");
+	Model DerTrasT((char*)"Models/Tigre/DerTras.obj");
+	Model DerFrontT((char*)"Models/Tigre/DerFront.obj");
+
+	Model TigreDos((char*)"Models/Tigre/TigreDos.obj");
+	Model HosicoDos((char*)"Models/Tigre/MandiDos.obj");
+	Model Cola((char*)"Models/Tigre/Cola.obj");
 
 
 	//Tigres
@@ -789,352 +789,352 @@ int main()
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
 		Zoo.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
-		//model = glm::translate(model, glm::vec3(23.776f, 2.167f, 41.19f));
-		//model = glm::rotate(model, glm::radians(rotPuerta), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
-		//PuertaIzq.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(23.776f, 2.167f, 41.19f));
+		model = glm::rotate(model, glm::radians(rotPuerta), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
+		PuertaIzq.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
-		//model = glm::translate(model, glm::vec3(29.911f , 2.167f, 41.18f));
-		//model = glm::rotate(model, glm::radians(-rotPuerta), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
-		//PuertaDer.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(29.911f , 2.167f, 41.18f));
+		model = glm::rotate(model, glm::radians(-rotPuerta), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
+		PuertaDer.Draw(lightingShader);
 
-		////Elefante
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
-		//model = glm::translate(model, glm::vec3(-22.576 - movEle, 1.991f, -9.195f));
-		//model = glm::translate(model, glm::vec3(0,-movCuerpo,0));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
-		//Ele.Draw(lightingShader);
-
-
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX - movEle, posY, posZ));
-		//model = glm::translate(model, glm::vec3(-24.216f, 2.339f, -9.192f));
-		//model = glm::translate(model, glm::vec3(0, -movCuerpo, 0));
-		//model = glm::rotate(model, glm::radians(rotTrompa), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Trompa.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(-22.789f - movEle, 1.59f, -9.527f));
-		//model = glm::translate(model, glm::vec3(0, -movFront, 0));
-		//model = glm::rotate(model, glm::radians(rotPar), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotFrente), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerFront.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(-20.87f - movEle, 1.271f, -9.495f));
-		//model = glm::translate(model, glm::vec3(0,-movBack, 0));
-		//model = glm::rotate(model, glm::radians(rotPar), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotTras), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerTras.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(-20.864f - movEle, 1.27f, -8.887f));
-		//model = glm::translate(model, glm::vec3(0, -movBack, 0));
-		//model = glm::rotate(model, glm::radians(-rotImp), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotTras), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqTras.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(-22.79f - movEle, 1.591f, -8.856f));
-		//model = glm::translate(model, glm::vec3(0, -movFront, 0));
-		//model = glm::rotate(model, glm::radians(-rotImp), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotFrente), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqFront.Draw(lightingShader);
-		//
-		////Segundo Elefante
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY+ movCuerpoDos, posZ)); //Posicion inicial 
-		//model = glm::translate(model, glm::vec3(-32.163, 0.802f, -5.566f));
-		//model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
-		//EleDos.Draw(lightingShader);
-
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY+ movTrompa, posZ));
-		//model = glm::translate(model, glm::vec3(-32.159f, 0.802f, -3.932f));
-		//model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotT), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotTrompaDos), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotTrompaL), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//TrompaDos.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY+ movFrontDos, posZ));
-		//model = glm::translate(model, glm::vec3(-32.502f, 0.802f, -5.35f));
-		//model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotTrasDos), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerFrontDos.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY+ movBackDos, posZ));
-		//model = glm::translate(model, glm::vec3(-32.459f, 0.802f, -7.274f));
-		//model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotFrenteDos), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerTrasDos.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY+ movBackDos, posZ));
-		//model = glm::translate(model, glm::vec3(-31.859f, 0.802f, -7.267f));
-		//model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotFrenteDos), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqTrasDos.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY+ movFrontDos, posZ));
-		//model = glm::translate(model, glm::vec3(-31.82f, 0.802f, -5.349f));
-		//model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotTrasDos), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqFronDos.Draw(lightingShader);
+		//Elefante
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(-22.576 - movEle, 1.991f, -9.195f));
+		model = glm::translate(model, glm::vec3(0,-movCuerpo,0));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
+		Ele.Draw(lightingShader);
 
 
 
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX - movEle, posY, posZ));
+		model = glm::translate(model, glm::vec3(-24.216f, 2.339f, -9.192f));
+		model = glm::translate(model, glm::vec3(0, -movCuerpo, 0));
+		model = glm::rotate(model, glm::radians(rotTrompa), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Trompa.Draw(lightingShader);
 
-		////Jirafas
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-22.789f - movEle, 1.59f, -9.527f));
+		model = glm::translate(model, glm::vec3(0, -movFront, 0));
+		model = glm::rotate(model, glm::radians(rotPar), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotFrente), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerFront.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(36.79f + movJira, 3.576f , 36.001f));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotJZ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotJX), glm::vec3(1.0f, 0.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotJY), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Jirafa.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-20.87f - movEle, 1.271f, -9.495f));
+		model = glm::translate(model, glm::vec3(0,-movBack, 0));
+		model = glm::rotate(model, glm::radians(rotPar), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotTras), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerTras.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));		
-		//model = glm::translate(model, glm::vec3(36.27f + movJira, 2.581f, 36.029f));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Torso.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-20.864f - movEle, 1.27f, -8.887f));
+		model = glm::translate(model, glm::vec3(0, -movBack, 0));
+		model = glm::rotate(model, glm::radians(-rotImp), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotTras), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqTras.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));		
-		//model = glm::translate(model, glm::vec3(36.399f + movJira, 2.137f, 36.172f));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerFrontJ.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-22.79f - movEle, 1.591f, -8.856f));
+		model = glm::translate(model, glm::vec3(0, -movFront, 0));
+		model = glm::rotate(model, glm::radians(-rotImp), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotFrente), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqFront.Draw(lightingShader);
+		
+		//Segundo Elefante
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(36.376f + movJira, 2.137f, 35.82f));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqFrontJ.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY+ movCuerpoDos, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(-32.163, 0.802f, -5.566f));
+		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
+		EleDos.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(35.27f + movJira, 2.145f, 36.132f));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerTrasJ.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(35.271f + movJira, 2.144f, 35.851f));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqTrasJ.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY+ movTrompa, posZ));
+		model = glm::translate(model, glm::vec3(-32.159f, 0.802f, -3.932f));
+		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotT), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotTrompaDos), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotTrompaL), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		TrompaDos.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY+ movFrontDos, posZ));
+		model = glm::translate(model, glm::vec3(-32.502f, 0.802f, -5.35f));
+		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotTrasDos), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerFrontDos.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY+ movBackDos, posZ));
+		model = glm::translate(model, glm::vec3(-32.459f, 0.802f, -7.274f));
+		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotFrenteDos), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerTrasDos.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY+ movBackDos, posZ));
+		model = glm::translate(model, glm::vec3(-31.859f, 0.802f, -7.267f));
+		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotFrenteDos), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqTrasDos.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY+ movFrontDos, posZ));
+		model = glm::translate(model, glm::vec3(-31.82f, 0.802f, -5.349f));
+		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotTrasDos), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqFronDos.Draw(lightingShader);
 
 
 
 
+		//Jirafas
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(44.925f-movJira, 3.576f, 36.063f));
-		//model = glm::rotate(model, glm::radians(rotJZ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(-rotJX), glm::vec3(1.0f, 0.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotJY), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//JirafaDos.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(36.79f + movJira, 3.576f , 36.001f));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotJZ), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotJX), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotJY), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Jirafa.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(45.447f - movJira, 2.581f, 36.029f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//TorsoDos.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));		
+		model = glm::translate(model, glm::vec3(36.27f + movJira, 2.581f, 36.029f));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Torso.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(45.327f - movJira, 2.137f, 35.883f));
-		//model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerFrontDosJ.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));		
+		model = glm::translate(model, glm::vec3(36.399f + movJira, 2.137f, 36.172f));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerFrontJ.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(45.344f - movJira, 2.137f, 36.236f));
-		//model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqFrontDosJ.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(36.376f + movJira, 2.137f, 35.82f));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqFrontJ.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(46.446f - movJira, 2.145f, 35.927f));
-		//model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerTrasDosJ.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(35.27f + movJira, 2.145f, 36.132f));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerTrasJ.Draw(lightingShader);
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(46.443f - movJira, 2.145f, 36.206f));
-		//model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqTrasDosJ.Draw(lightingShader);
-
-
-		////Coche
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX+ movCocheX, posY, posZ + movCocheZ));
-		//model = glm::translate(model, glm::vec3(52.075f, 0.724f, 43.058f));
-		//model = glm::rotate(model, glm::radians(rotCoche), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Coche.Draw(lightingShader);
-
-		////Tigre
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX - movTigre, posY + movCuerpoT, posZ));
-		//model = glm::translate(model, glm::vec3(-0.609f,-2.618f,-3.562));
-		//model = glm::rotate(model, glm::radians(rotCuerpoT), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Tigre.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX - movTigre + movMandiX, posY+movMandiY, posZ));
-		//model = glm::translate(model, glm::vec3(-1.609f, -2.28f, -3.563f));
-		//model = glm::rotate(model, glm::radians(rotMandi), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Hosico.Draw(lightingShader);
-
-		//
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX - movTigre - movFrontTX, posY + movFrontTY, posZ));
-		//model = glm::translate(model, glm::vec3(-1.297f, -2.393f, -3.459f));
-		//model = glm::rotate(model, glm::radians(-rotImpT), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotFronT), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqFrontT.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX - movTigre - movFrontTX, posY + movFrontTY, posZ));
-		//model = glm::translate(model, glm::vec3(-1.298f, -2.391f, -3.696f));
-		//model = glm::rotate(model, glm::radians(rotParT), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotFronT), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerFrontT.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX - movTigre, posY, posZ));
-		//model = glm::translate(model, glm::vec3(0.009f, -2.359f, -3.701f));
-		//model = glm::rotate(model, glm::radians(-rotImpT), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//DerTrasT.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX - movTigre, posY, posZ));
-		//model = glm::translate(model, glm::vec3(0.012f, -2.362f, -3.482f));
-		//model = glm::rotate(model, glm::radians(rotParT), glm::vec3(0.0f, 0.0f, 1.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//IzqTrasT.Draw(lightingShader);
-
-		//
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX , posY, posZ));
-		//model = glm::translate(model, glm::vec3(12.875f, -2.577f,0));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//TigreDos.Draw(lightingShader);
-
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(13.577f, -2.275f, -0.013f));
-		//model = glm::rotate(model, glm::radians(rotMandiDos), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//HosicoDos.Draw(lightingShader);
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(35.271f + movJira, 2.144f, 35.851f));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqTrasJ.Draw(lightingShader);
 
 
-		//view = camera.GetViewMatrix();
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//model = glm::translate(model, glm::vec3(11.779f, -2.207f, -0.008f));
-		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::rotate(model, glm::radians(rotCola), glm::vec3(0.0f, 0.0f, 1.0f));
-		//model = glm::rotate(model, glm::radians(rotCL), glm::vec3(1.0f, 0.0f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Cola.Draw(lightingShader);
+
+
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(44.925f-movJira, 3.576f, 36.063f));
+		model = glm::rotate(model, glm::radians(rotJZ), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(-rotJX), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotJY), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		JirafaDos.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(45.447f - movJira, 2.581f, 36.029f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		TorsoDos.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(45.327f - movJira, 2.137f, 35.883f));
+		model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerFrontDosJ.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(45.344f - movJira, 2.137f, 36.236f));
+		model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqFrontDosJ.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(46.446f - movJira, 2.145f, 35.927f));
+		model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerTrasDosJ.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(46.443f - movJira, 2.145f, 36.206f));
+		model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqTrasDosJ.Draw(lightingShader);
+
+
+		//Coche
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX+ movCocheX, posY, posZ + movCocheZ));
+		model = glm::translate(model, glm::vec3(52.075f, 0.724f, 43.058f));
+		model = glm::rotate(model, glm::radians(rotCoche), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Coche.Draw(lightingShader);
+
+		//Tigre
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX - movTigre, posY + movCuerpoT, posZ));
+		model = glm::translate(model, glm::vec3(-0.609f,-2.618f,-3.562));
+		model = glm::rotate(model, glm::radians(rotCuerpoT), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Tigre.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX - movTigre + movMandiX, posY+movMandiY, posZ));
+		model = glm::translate(model, glm::vec3(-1.609f, -2.28f, -3.563f));
+		model = glm::rotate(model, glm::radians(rotMandi), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Hosico.Draw(lightingShader);
+
+		
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX - movTigre - movFrontTX, posY + movFrontTY, posZ));
+		model = glm::translate(model, glm::vec3(-1.297f, -2.393f, -3.459f));
+		model = glm::rotate(model, glm::radians(-rotImpT), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotFronT), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqFrontT.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX - movTigre - movFrontTX, posY + movFrontTY, posZ));
+		model = glm::translate(model, glm::vec3(-1.298f, -2.391f, -3.696f));
+		model = glm::rotate(model, glm::radians(rotParT), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotFronT), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerFrontT.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX - movTigre, posY, posZ));
+		model = glm::translate(model, glm::vec3(0.009f, -2.359f, -3.701f));
+		model = glm::rotate(model, glm::radians(-rotImpT), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		DerTrasT.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX - movTigre, posY, posZ));
+		model = glm::translate(model, glm::vec3(0.012f, -2.362f, -3.482f));
+		model = glm::rotate(model, glm::radians(rotParT), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		IzqTrasT.Draw(lightingShader);
+
+		
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX , posY, posZ));
+		model = glm::translate(model, glm::vec3(12.875f, -2.577f,0));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		TigreDos.Draw(lightingShader);
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(13.577f, -2.275f, -0.013f));
+		model = glm::rotate(model, glm::radians(rotMandiDos), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		HosicoDos.Draw(lightingShader);
+
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(11.779f, -2.207f, -0.008f));
+		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotCola), glm::vec3(0.0f, 0.0f, 1.0f));
+		model = glm::rotate(model, glm::radians(rotCL), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Cola.Draw(lightingShader);
 
 		//Panda FRAMES
 		KeyFrame[0].movIzqDelX = 0.000000;
@@ -1277,34 +1277,34 @@ int main()
 
 
 
-		//glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
-		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);//Activacion de trasparencia
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.3f);//Nivel de trasparecia con valor en color alpha		
-		//Domo.Draw(lightingShader);
-		//glDisable(GL_BLEND);  //Desactiva el canal alfa 
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);
-		//glBindVertexArray(0);
+		glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);//Activacion de trasparencia
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.3f);//Nivel de trasparecia con valor en color alpha		
+		Domo.Draw(lightingShader);
+		glDisable(GL_BLEND);  //Desactiva el canal alfa 
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);
+		glBindVertexArray(0);
 
-		//animShader.Use();
-		//tiempo = glfwGetTime() * speed;
-		//// Get location objects for the matrices on the lamp shader (these could be different on a different shader)
-		//modelLoc = glGetUniformLocation(animShader.Program, "model");
-		//viewLoc = glGetUniformLocation(animShader.Program, "view");
-		//projLoc = glGetUniformLocation(animShader.Program, "projection");
-		//// Set matrices
-		//glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-		//glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1f(glGetUniformLocation(animShader.Program, "time"), tiempo);
-		//Agua.Draw(animShader);
-		//glBindVertexArray(0);
+		animShader.Use();
+		tiempo = glfwGetTime() * speed;
+		// Get location objects for the matrices on the lamp shader (these could be different on a different shader)
+		modelLoc = glGetUniformLocation(animShader.Program, "model");
+		viewLoc = glGetUniformLocation(animShader.Program, "view");
+		projLoc = glGetUniformLocation(animShader.Program, "projection");
+		// Set matrices
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1f(glGetUniformLocation(animShader.Program, "time"), tiempo);
+		Agua.Draw(animShader);
+		glBindVertexArray(0);
 
 
 
@@ -1379,12 +1379,6 @@ int main()
 
 	return 0;
 }
-
-
-
-
-
-
 
 
 
@@ -1719,7 +1713,7 @@ void DoMovement()
 	//If para animacion de la jirafa
 	if (animJirafa) {
 		if (movJira < 3.4 && retro == false) {
-			printf("%f", movJira);
+			
 			movJira += 0.00125;
 
 			if (rotParJ < 35 && rotImpJ < 35 && sentidoJ == false) {
