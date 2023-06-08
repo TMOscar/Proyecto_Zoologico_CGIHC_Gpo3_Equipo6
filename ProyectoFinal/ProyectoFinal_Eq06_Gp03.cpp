@@ -820,6 +820,7 @@ int main()
 		view = camera.GetViewMatrix();
 		glm::mat4 model(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0);//Pasa al color alpha 1 para quitar tra
@@ -829,6 +830,7 @@ int main()
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
 		model = glm::translate(model, glm::vec3(23.776f, 2.167f, 41.19f));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::rotate(model, glm::radians(rotPuerta), glm::vec3(0.0f, 1.0f, 0.0f));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -839,6 +841,7 @@ int main()
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
 		model = glm::translate(model, glm::vec3(29.911f , 2.167f, 41.18f));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::rotate(model, glm::radians(-rotPuerta), glm::vec3(0.0f, 1.0f, 0.0f));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -850,6 +853,7 @@ int main()
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
 		model = glm::translate(model, glm::vec3(-22.576 - movEle, 1.991f, -9.195f));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(0,-movCuerpo,0));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -862,6 +866,7 @@ int main()
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX - movEle, posY, posZ));
 		model = glm::translate(model, glm::vec3(-24.216f, 2.339f, -9.192f));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(0, -movCuerpo, 0));
 		model = glm::rotate(model, glm::radians(rotTrompa), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -870,6 +875,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-22.789f - movEle, 1.59f, -9.527f));
 		model = glm::translate(model, glm::vec3(0, -movFront, 0));
 		model = glm::rotate(model, glm::radians(rotPar), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -880,6 +886,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-20.87f - movEle, 1.271f, -9.495f));
 		model = glm::translate(model, glm::vec3(0,-movBack, 0));
 		model = glm::rotate(model, glm::radians(rotPar), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -890,6 +897,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-20.864f - movEle, 1.27f, -8.887f));
 		model = glm::translate(model, glm::vec3(0, -movBack, 0));
 		model = glm::rotate(model, glm::radians(-rotImp), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -900,6 +908,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-22.79f - movEle, 1.591f, -8.856f));
 		model = glm::translate(model, glm::vec3(0, -movFront, 0));
 		model = glm::rotate(model, glm::radians(-rotImp), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -912,6 +921,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY+ movCuerpoDos, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-32.163, 0.802f, -5.566f));
 		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); //Desactiva la transparencia 
@@ -923,6 +933,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY+ movTrompa, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-32.159f, 0.802f, -3.932f));
 		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotT), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -934,6 +945,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY+ movFrontDos, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-32.502f, 0.802f, -5.35f));
 		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotTrasDos), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -943,6 +955,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY+ movBackDos, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-32.459f, 0.802f, -7.274f));
 		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotFrenteDos), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -952,6 +965,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY+ movBackDos, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-31.859f, 0.802f, -7.267f));
 		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotFrenteDos), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -961,6 +975,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY+ movFrontDos, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-31.82f, 0.802f, -5.349f));
 		model = glm::rotate(model, glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotTrasDos), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -975,6 +990,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(36.79f + movJira, 3.576f , 36.001f));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotJZ), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -986,6 +1002,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));		
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(36.27f + movJira, 2.581f, 36.029f));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -994,6 +1011,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));		
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(36.399f + movJira, 2.137f, 36.172f));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1003,6 +1021,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(36.376f + movJira, 2.137f, 35.82f));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1012,6 +1031,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(35.27f + movJira, 2.145f, 36.132f));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1021,6 +1041,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(35.271f + movJira, 2.144f, 35.851f));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1034,6 +1055,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(44.925f-movJira, 3.576f, 36.063f));
 		model = glm::rotate(model, glm::radians(rotJZ), glm::vec3(0.0f, 0.0f, 1.0f));
 		model = glm::rotate(model, glm::radians(-rotJX), glm::vec3(1.0f, 0.0f, 0.0f));
@@ -1044,6 +1066,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(45.447f - movJira, 2.581f, 36.029f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		TorsoDos.Draw(lightingShader);
@@ -1051,6 +1074,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(45.327f - movJira, 2.137f, 35.883f));
 		model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1059,6 +1083,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(45.344f - movJira, 2.137f, 36.236f));
 		model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1067,6 +1092,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(46.446f - movJira, 2.145f, 35.927f));
 		model = glm::rotate(model, glm::radians(-rotImpJ), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1075,6 +1101,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(46.443f - movJira, 2.145f, 36.206f));
 		model = glm::rotate(model, glm::radians(rotParJ), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1085,6 +1112,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX+ movCocheX, posY, posZ + movCocheZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(52.075f, 0.724f, 43.058f));
 		model = glm::rotate(model, glm::radians(rotCoche), glm::vec3(0.0f, 1.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1094,6 +1122,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX - movTigre, posY + movCuerpoT, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-0.609f,-2.618f,-3.562));
 		model = glm::rotate(model, glm::radians(rotCuerpoT), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1102,6 +1131,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX - movTigre + movMandiX, posY+movMandiY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-1.609f, -2.28f, -3.563f));
 		model = glm::rotate(model, glm::radians(rotMandi), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1111,6 +1141,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX - movTigre - movFrontTX, posY + movFrontTY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-1.297f, -2.393f, -3.459f));
 		model = glm::rotate(model, glm::radians(-rotImpT), glm::vec3(0.0f, 0.0f, 1.0f));
 		model = glm::rotate(model, glm::radians(rotFronT), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1120,6 +1151,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX - movTigre - movFrontTX, posY + movFrontTY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(-1.298f, -2.391f, -3.696f));
 		model = glm::rotate(model, glm::radians(rotParT), glm::vec3(0.0f, 0.0f, 1.0f));
 		model = glm::rotate(model, glm::radians(rotFronT), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1129,6 +1161,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX - movTigre, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(0.009f, -2.359f, -3.701f));
 		model = glm::rotate(model, glm::radians(-rotImpT), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1137,6 +1170,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX - movTigre, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(0.012f, -2.362f, -3.482f));
 		model = glm::rotate(model, glm::radians(rotParT), glm::vec3(0.0f, 0.0f, 1.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1147,6 +1181,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX , posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(12.875f, -2.577f,0));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1155,6 +1190,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(13.577f, -2.275f, -0.013f));
 		model = glm::rotate(model, glm::radians(rotMandiDos), glm::vec3(0.0f, 0.0f, 1.0f));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
@@ -1165,6 +1201,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(11.779f, -2.207f, -0.008f));
 		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotCola), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1252,6 +1289,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX , posY, posZ ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(5.376, 1.67, 21.387));
 		model = glm::translate(model, glm::vec3(movPandaX, movPandaY, movPandaZ));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -1263,6 +1301,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX , posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(5.24, 1.474, 21.669));
 		model = glm::translate(model, glm::vec3(movDerDelX, movDerDelY, movDerDelZ));
 		model = glm::rotate(model, glm::radians(rotDelY), glm::vec3(0.0f, 1.0f, 0.0f));
@@ -1275,6 +1314,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX , posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(5.235, 1.471, 21.046));
 		model = glm::translate(model, glm::vec3(movIzqDelX, movIzqDelY, movIzqDelZ));
 		model = glm::rotate(model, glm::radians(rotDelY), glm::vec3(0.0f, 1.0f, 0.0f));
@@ -1286,6 +1326,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(5.436, 0.43,21.215));
 		model = glm::translate(model, glm::vec3(movDerTrasX, movDerTrasY, movDerTrasZ));
 
@@ -1299,6 +1340,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(5.456, 0.422, 21.515));
 		model = glm::translate(model, glm::vec3(movIzqTrasX, movIzqTrasY, movIzqTrasZ));
 
@@ -1334,6 +1376,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(40.576, 1.297, -5.708)); //Posicion inicial 
 		model = glm::translate(model, glm::vec3(movMonoX, movMonoY, movMonoZ)); //Posicion inicial 
 		model = glm::rotate(model, glm::radians(rotMono), glm::vec3(1.0f, 0.0f, 0.0f));
@@ -1344,6 +1387,7 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		model = glm::translate(model, glm::vec3(38.019, 1.402, -7.114)); //Posicion inicial
 		model = glm::rotate(model, glm::radians(92.519f), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(rotMonoDos), glm::vec3(1.0f, 0.0f, 0.0f));
@@ -1356,6 +1400,7 @@ int main()
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);//Activacion de trasparencia
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.3f);//Nivel de trasparecia con valor en color alpha		
@@ -1376,6 +1421,7 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		model = glm::translate(model, glm::vec3(-30, -4, -60));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1f(glGetUniformLocation(animShader.Program, "time"), tiempo);
 		Agua.Draw(animShader);
