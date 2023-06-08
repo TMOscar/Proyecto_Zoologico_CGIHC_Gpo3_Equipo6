@@ -22,11 +22,11 @@
     <ClInclude Include="Model.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="317181201_ProyectoFinal_Gp07.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Shaders\anim.vs" />
     <None Include="Shaders\anim2.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProyectoFinal_Eq06_Gp03.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

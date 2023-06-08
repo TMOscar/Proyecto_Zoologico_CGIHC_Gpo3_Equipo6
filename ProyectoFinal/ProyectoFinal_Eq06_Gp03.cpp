@@ -103,6 +103,11 @@ float rotDelY = 0;
 float rotDelZ = 0;
 
 
+float rotMonoDos = 0;
+bool sentidoMono = false, animMono = true;
+float rotMono = 0, movMonoX = 0, movMonoY = 0, movMonoZ = 0;
+
+
 
 // Light attributes
 glm::vec3 lightPos(0.0f, 0.0f, 0.0f);
@@ -120,7 +125,7 @@ GLfloat lastFrame = 0.0f;  	// Time of last frame
 float posX = PosIni.x, posY = PosIni.y, posZ = PosIni.z;
 
 
-#define MAX_FRAMES 4
+#define MAX_FRAMES 5
 int i_max_steps = 190;
 int i_curr_steps = 0;
 typedef struct _frame
@@ -182,7 +187,15 @@ typedef struct _frame
 	float rotTrasY_Inc;
 	float rotTrasZ_Inc;
 
+	float movMonoX;
+	float movMonoY;
+	float movMonoZ;
+	float rotMono;
 
+	float movMonoX_Inc;
+	float movMonoY_Inc;
+	float movMonoZ_Inc;
+	float rotMono_Inc;
 
 
 }FRAME;
@@ -238,6 +251,10 @@ void saveFrame(void)
 	KeyFrame[FrameIndex].rotDelY = rotDelY;
 	KeyFrame[FrameIndex].rotDelZ = rotDelZ;
 
+	KeyFrame[FrameIndex].movMonoX = movMonoX;
+	KeyFrame[FrameIndex].movMonoY = movMonoY;
+	KeyFrame[FrameIndex].movMonoZ = movMonoZ;
+	KeyFrame[FrameIndex].rotMono = rotMono;
 
 	FrameIndex++;
 }
@@ -274,6 +291,10 @@ void resetElements(void)
 	rotTrasY = KeyFrame[0].rotDelY;
 	rotTrasZ = KeyFrame[0].rotDelZ;
 
+	movMonoX = KeyFrame[0].movMonoX;
+	movMonoY = KeyFrame[0].movMonoY;
+	movMonoZ = KeyFrame[0].movMonoZ;
+	rotMono = KeyFrame[0].rotMono;
 	
 
 
@@ -311,6 +332,12 @@ void interpolation(void)
 	KeyFrame[playIndex].rotDelX_Inc = (KeyFrame[playIndex + 1].rotDelX - KeyFrame[playIndex].rotDelX) / i_max_steps;
 	KeyFrame[playIndex].rotDelY_Inc = (KeyFrame[playIndex + 1].rotDelY - KeyFrame[playIndex].rotDelY) / i_max_steps;
 	KeyFrame[playIndex].rotDelZ_Inc = (KeyFrame[playIndex + 1].rotDelZ - KeyFrame[playIndex].rotDelZ) / i_max_steps;
+
+	KeyFrame[playIndex].movMonoX_Inc = (KeyFrame[playIndex + 1].movMonoX - KeyFrame[playIndex].movMonoX) / i_max_steps;
+	KeyFrame[playIndex].movMonoY_Inc = (KeyFrame[playIndex + 1].movMonoY - KeyFrame[playIndex].movMonoY) / i_max_steps;
+	KeyFrame[playIndex].movMonoZ_Inc = (KeyFrame[playIndex + 1].movMonoZ - KeyFrame[playIndex].movMonoZ) / i_max_steps;
+	KeyFrame[playIndex].rotMono_Inc = (KeyFrame[playIndex + 1].rotMono - KeyFrame[playIndex].rotMono) / i_max_steps;
+
 
 }
 
@@ -440,6 +467,10 @@ int main()
 	Model DerTrasP((char*)"Models/Panda/DerTras.obj");
 	Model IzqTrasP((char*)"Models/Panda/IzqTras.obj");
 
+	//Monos
+	Model Mono((char*)"Models/Mono/Mono.obj");
+	Model MonoDos((char*)"Models/Mono/Mono.obj");
+
 
 	// Build and compile our shader program
 
@@ -475,6 +506,11 @@ int main()
 		KeyFrame[i].rotDelX = 0;
 		KeyFrame[i].rotDelY = 0;
 		KeyFrame[i].rotDelZ = 0;
+
+		KeyFrame[i].rotMono = 0;
+		KeyFrame[i].movMonoX = 0;
+		KeyFrame[i].movMonoY = 0;
+		KeyFrame[i].movMonoZ = 0;
 
 	}
 
@@ -1273,7 +1309,46 @@ int main()
 		IzqTrasP.Draw(lightingShader);
 
 
+		//Monos
+		KeyFrame[0].rotMono = 45.000000;
+		KeyFrame[1].rotMono = -130.000000;
+		KeyFrame[2].rotMono = -140.000000;
+		KeyFrame[3].rotMono = -90.000000;
+		KeyFrame[4].rotMono = -20.000000;
+		KeyFrame[0].movMonoX = 0.000000;
+		KeyFrame[1].movMonoX = 0.000000;
+		KeyFrame[2].movMonoX = -0.010000;
+		KeyFrame[3].movMonoX = 0.180000;
+		KeyFrame[4].movMonoX = 0.000000;
+		KeyFrame[0].movMonoY = 0.000000;
+		KeyFrame[1].movMonoY = -0.190000;
+		KeyFrame[2].movMonoY = 0.830000;
+		KeyFrame[3].movMonoY = 0.989999;
+		KeyFrame[4].movMonoY = -0.050000;
+		KeyFrame[0].movMonoZ = 0.000000;
+		KeyFrame[1].movMonoZ = -0.070000;
+		KeyFrame[2].movMonoZ = 2.639998;
+		KeyFrame[3].movMonoZ = 5.110022;
+		KeyFrame[4].movMonoZ = 7.980088;
 
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(40.576, 1.297, -5.708)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(movMonoX, movMonoY, movMonoZ)); //Posicion inicial 
+		model = glm::rotate(model, glm::radians(rotMono), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Mono.Draw(lightingShader);
+
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(posX, posY, posZ)); //Posicion inicial 
+		model = glm::translate(model, glm::vec3(38.019, 1.402, -7.114)); //Posicion inicial
+		model = glm::rotate(model, glm::radians(92.519f), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model, glm::radians(rotMonoDos), glm::vec3(1.0f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		MonoDos.Draw(lightingShader);
 
 
 
@@ -1446,7 +1521,11 @@ void animacion()
 			movDerTrasY += KeyFrame[playIndex].movDerTrasY_Inc;
 			movDerTrasZ += KeyFrame[playIndex].movDerTrasZ_Inc;
 
+			rotMono += KeyFrame[playIndex].rotMono_Inc;
 
+			movMonoX += KeyFrame[playIndex].movMonoX_Inc;
+			movMonoY += KeyFrame[playIndex].movMonoY_Inc;
+			movMonoZ += KeyFrame[playIndex].movMonoZ_Inc;
 
 
 			i_curr_steps++;
@@ -1909,7 +1988,23 @@ void DoMovement()
 
 
 
+	if (animMono) {
 
+		if (rotMonoDos < 25 && sentidoMono == false) {
+			rotMonoDos += 0.08f;
+			if (rotMonoDos > 25.0f)
+				sentidoMono = true;
+
+
+		}
+
+
+		if (rotMonoDos > -25 && sentidoMono == true)
+			rotMonoDos -= 0.08f;
+		if (rotMonoDos < -25)
+			sentidoMono = false;
+
+	}
 
 	
 

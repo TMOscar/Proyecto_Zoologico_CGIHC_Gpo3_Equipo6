@@ -20,16 +20,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="317181201_ProyectoFinal_Gp07.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Shaders\anim.vs">
       <Filter>Archivos de encabezado</Filter>
     </None>
     <None Include="Shaders\anim2.vs">
       <Filter>Archivos de encabezado</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProyectoFinal_Eq06_Gp03.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
